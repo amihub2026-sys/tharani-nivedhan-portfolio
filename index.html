@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tharani Nivedhan – Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-bracket">&lt;</span>TN<span class="brand-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Java · Spring Boot · MySQL · Full Stack</p>
+      <h1 class="hero-title">
+        Hi, I'm Tharani<br/>
+        <span class="hero-highlight">Nivedhan S</span><br/>
+        Full Stack Developer.
+      </h1>
+      <p class="hero-sub">2+ years of experience building robust backend systems and clean user interfaces. Skilled in Java, Spring Boot, MySQL, Angular, and Supabase — from social media automation to matrimony CRM platforms.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stack-pills">
+        <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>Angular</span><span>Supabase</span><span>HTML/CSS/JS</span>
+      </div>
+    </div>
+    <div class="hero-code-block">
+      <div class="code-window">
+        <div class="code-titlebar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">SocialAutoPost.java</span>
+        </div>
+        <pre class="code-body"><code><span class="c-kw">@SpringBootApplication</span>
+<span class="c-kw">public class</span> <span class="c-cls">SocialAutoPost</span> {
+
+  <span class="c-kw">@PostMapping</span>(<span class="c-str">"/auto-post"</span>)
+  <span class="c-kw">public</span> String postToSocial(
+      String prompt) {
+    Image img = convert(prompt);
+    <span class="c-kw">return</span> socialApi.post(img);
+  }
+
+  <span class="c-kw">public static void</span> main(
+      String[] args) {
+    SpringApplication
+      .run(<span class="c-cls">SocialAutoPost</span>
+        .<span class="c-kw">class</span>, args);
+  }
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">Dynamic developer who turns ideas into impactful solutions.</h2>
+          <p>I'm a Full Stack Developer based in Madurai, Tamil Nadu, with 2+ years of professional experience across two companies. I specialize in Java backend development, RESTful APIs with Spring Boot, and building complete web applications with modern frontend tools.</p>
+          <p>I completed my MCA from Madurai Kamarajar University (2023–2025) and have hands-on experience in Collibra, Workflow, CRM systems, Angular, and Supabase. I'm a fast learner with strong communication skills, committed to driving innovation in every project I take on.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num" data-target="2">0</span>+ <span class="stat-label">Years Experience</span></div>
+            <div class="stat"><span class="stat-num" data-target="7">0</span>+ <span class="stat-label">Projects Delivered</span></div>
+            <div class="stat"><span class="stat-num" data-target="10">0</span>+ <span class="stat-label">Technologies Used</span></div>
+          </div>
+        </div>
+        <div class="about-img-wrap">
+          <div class="about-avatar">
+            <img src="profile.jpg" alt="Tharani Nivedhan" class="avatar-photo" />
+            <div class="avatar-ring"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-heading">Tech Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">☕</div>
+          <h3>Backend</h3>
+          <ul>
+            <li><span>Core Java</span><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div></li>
+            <li><span>Spring Boot</span><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></li>
+            <li><span>REST APIs</span><div class="skill-bar"><div class="skill-fill" data-w="83"></div></div></li>
+            <li><span>Collibra &amp; Workflow</span><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>Database</h3>
+          <ul>
+            <li><span>MySQL</span><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></li>
+            <li><span>SQL Queries &amp; Joins</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div></li>
+            <li><span>Supabase</span><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div></li>
+            <li><span>Database Design</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🖥️</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li><span>HTML5 / CSS3</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div></li>
+            <li><span>JavaScript (ES6+)</span><div class="skill-bar"><div class="skill-fill" data-w="82"></div></div></li>
+            <li><span>Angular</span><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div></li>
+            <li><span>Responsive Design</span><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools & Soft Skills</h3>
+          <ul>
+            <li><span>Git / GitHub</span><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></li>
+            <li><span>Fast Learning</span><div class="skill-bar"><div class="skill-fill" data-w="95"></div></div></li>
+            <li><span>Communication</span><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></li>
+            <li><span>Problem Solving</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-heading">Featured Work</h2>
+      <div class="projects-grid">
+
+        <div class="project-card project-card--featured">
+          <div class="project-tag">Social Media Automation · Geval6 Inc</div>
+          <h3>Social Media Auto-Post System</h3>
+          <p>A Java-based automation tool that converts a text prompt into an AI-generated image and automatically posts it to social media platforms. Built during my tenure at Geval6 Inc, this project streamlined content publishing workflows.</p>
+          <div class="project-tech">
+            <span>Java</span><span>Spring Boot</span><span>Image Processing</span><span>Social API</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--featured">
+          <div class="project-tag">CRM · AM I HUB</div>
+          <h3>Matrimony CRM Platform</h3>
+          <p>A full-featured CRM system for a matrimony service built with Angular and Supabase. Includes profile management, matchmaking filters, communication tools, and an admin dashboard for managing user data and leads.</p>
+          <div class="project-tech">
+            <span>Angular</span><span>Supabase</span><span>JavaScript</span><span>MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">Client Websites · AM I HUB</div>
+          <h3>5 Client Websites</h3>
+          <p>Designed and developed 5 production websites for external clients at AM I HUB startup. Each site was fully responsive and delivered end-to-end from requirements gathering to deployment.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">View Work →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">Training · Geval6 Inc</div>
+          <h3>Collibra Workflow Integration</h3>
+          <p>Completed specialized training in Collibra data governance platform and Workflow automation during my time at Geval6. Applied this knowledge to enhance project efficiency and team collaboration workflows.</p>
+          <div class="project-tech">
+            <span>Collibra</span><span>Workflow</span><span>Java</span><span>SQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Details →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-label">04 — Experience</div>
+      <h2 class="section-heading">Career Journey</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2025 – Present</div>
+            <h3>Developer</h3>
+            <p class="timeline-company">AM I HUB (Startup) · Madurai</p>
+            <ul>
+              <li>Built a full-featured Matrimony CRM using Angular and Supabase for a live product.</li>
+              <li>Delivered 5 complete client websites from design to deployment.</li>
+              <li>Worked across the full stack — backend APIs, database, and responsive frontend.</li>
+              <li>Collaborated closely with startup team in an Agile, fast-paced environment.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2023 – 2024</div>
+            <h3>Java Developer</h3>
+            <p class="timeline-company">Geval6 Inc · Madurai</p>
+            <ul>
+              <li>Developed a Social Media Auto-Post system in Java — converting prompts to images and auto-publishing to social media.</li>
+              <li>Completed in-depth training in Collibra data governance and Workflow automation.</li>
+              <li>Worked with Java, SQL, and backend development practices in a professional setting.</li>
+              <li>Contributed to improving project efficiency and team collaboration through workflow tools.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2023 – 2025</div>
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p class="timeline-company">Madurai Kamarajar University · Madurai</p>
+            <ul>
+              <li>Specialized in software development, databases, and computer applications.</li>
+              <li>Built strong foundations in Java, SQL, and web technologies.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label">05 — Contact</div>
+      <h2 class="section-heading">Let's Work Together</h2>
+      <p class="contact-sub">Open to full-time roles, freelance projects, and collaborations. Based in Madurai — available remotely too.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:tharaninivedhan@gmail.com">tharaninivedhan@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <div class="contact-label">Phone</div>
+              <a href="tel:+918122937144">+91 81229 37144</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <div class="contact-label">Location</div>
+              <span>8, Nethaji Street, Jaihindpuram, Madurai</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <a href="#">linkedin.com/in/tharaninivedhan</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project / Opportunity" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <div class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <span class="brand-bracket">&lt;</span>TN<span class="brand-bracket">/&gt;</span>
+      </div>
+      <p>Tharani Nivedhan S · Full Stack Developer · Madurai</p>
+      <p class="footer-copy">© 2025 Tharani Nivedhan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
