@@ -27,51 +27,140 @@
     </button>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Java · Spring Boot · MySQL · Full Stack</p>
-      <h1 class="hero-title">
-        Hi, I'm Tharani<br/>
-        <span class="hero-highlight">Nivedhan S</span><br/>
-        Full Stack Developer.
+<!-- NEW PROFESSIONAL HERO -->
+<section class="hero hero-v2" id="home">
+  <div class="hero-v2-container">
+
+    <div class="hero-v2-left">
+
+      <div class="hero-v2-label">
+        <span class="availability-dot"></span>
+        FULL STACK DEVELOPER
+        <span class="label-divider"></span>
+        OPEN TO OPPORTUNITIES
+      </div>
+
+      <p class="hero-v2-greeting">Hello, I'm</p>
+
+      <h1>
+        Tharani<br>
+        <span>Nivedhan.</span>
       </h1>
-      <p class="hero-sub">2+ years of experience building robust backend systems and clean user interfaces. Skilled in Java, Spring Boot, MySQL, Angular, and Supabase — from social media automation to matrimony CRM platforms.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+
+      <h2>
+        Building digital solutions
+        <em>that make an impact.</em>
+      </h2>
+
+      <p class="hero-v2-description">
+        Full Stack Developer with 2+ years of experience
+        developing scalable backend systems and modern,
+        responsive web applications using Java,
+        Spring Boot, Angular and MySQL.
+      </p>
+
+      <div class="hero-v2-actions">
+        <a href="#projects" class="hero-v2-primary">
+          Explore My Work <span>↗</span>
+        </a>
+
+        <a href="#contact" class="hero-v2-secondary">
+          Let's Connect <span>↗</span>
+        </a>
       </div>
-      <div class="hero-stack-pills">
-        <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>Angular</span><span>Supabase</span><span>HTML/CSS/JS</span>
-      </div>
-    </div>
-    <div class="hero-code-block">
-      <div class="code-window">
-        <div class="code-titlebar">
-          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="code-filename">SocialAutoPost.java</span>
+
+      <div class="hero-v2-info">
+        <div>
+          <strong>2+</strong>
+          <span>Years Experience</span>
         </div>
-        <pre class="code-body"><code><span class="c-kw">@SpringBootApplication</span>
-<span class="c-kw">public class</span> <span class="c-cls">SocialAutoPost</span> {
+        <div>
+          <strong>7+</strong>
+          <span>Projects Delivered</span>
+        </div>
+        <div>
+          <strong>Full Stack</strong>
+          <span>Development</span>
+        </div>
+      </div>
 
-  <span class="c-kw">@PostMapping</span>(<span class="c-str">"/auto-post"</span>)
-  <span class="c-kw">public</span> String postToSocial(
-      String prompt) {
-    Image img = convert(prompt);
-    <span class="c-kw">return</span> socialApi.post(img);
-  }
+    </div>
 
-  <span class="c-kw">public static void</span> main(
-      String[] args) {
-    SpringApplication
-      .run(<span class="c-cls">SocialAutoPost</span>
-        .<span class="c-kw">class</span>, args);
+    <div class="hero-v2-right">
+
+      <div class="editor-floating-tag">
+        <span>✦</span> DEVELOPMENT WORKSPACE
+      </div>
+
+      <div class="hero-v2-editor">
+
+        <div class="editor-header">
+          <div class="editor-dots">
+            <i></i><i></i><i></i>
+          </div>
+          <span>Developer.java</span>
+          <small>JAVA</small>
+        </div>
+
+        <div class="editor-file">
+          <span>☕</span> Developer.java
+        </div>
+
+        <pre class="editor-code"><code><span class="ec-purple">public class</span> <span class="ec-blue">Developer</span> {
+
+  String name =
+    <span class="ec-yellow">"Tharani Nivedhan"</span>;
+
+  String role =
+    <span class="ec-yellow">"Full Stack Developer"</span>;
+
+  String[] technologies = {
+    <span class="ec-yellow">"Java"</span>,
+    <span class="ec-yellow">"Spring Boot"</span>,
+    <span class="ec-yellow">"Angular"</span>,
+    <span class="ec-yellow">"MySQL"</span>
+  };
+
+  <span class="ec-purple">public void</span> develop() {
+    buildScalableApplications();
+    writeCleanCode();
+    solveRealWorldProblems();
   }
 }</code></pre>
+
+        <div class="editor-footer">
+          <span><i class="editor-online"></i> Ready to build</span>
+          <span>UTF-8 · Java</span>
+        </div>
+
       </div>
+
+      <div class="hero-v2-floating">
+        <div class="floating-icon">⌘</div>
+        <div>
+          <strong>Full Stack Development</strong>
+          <span>Frontend to Backend</span>
+        </div>
+        <span class="floating-arrow">↗</span>
+      </div>
+
     </div>
-  </section>
+
+  </div>
+
+  <div class="hero-v2-tech">
+    <span>TECHNOLOGIES I WORK WITH</span>
+    <div>
+      <b>Java</b>
+      <b>Spring Boot</b>
+      <b>Angular</b>
+      <b>MySQL</b>
+      <b>REST APIs</b>
+      <b>Supabase</b>
+    </div>
+  </div>
+</section>
+
 
   <!-- ABOUT -->
   <section class="section" id="about">
@@ -212,10 +301,180 @@
     </div>
   </section>
 
+
+  
+<!-- LIVE PROJECTS -->
+<section class="section live-projects" id="live-projects">
+  <div class="container">
+
+    <div class="section-label">04 — Live Projects</div>
+    <h2 class="section-heading">Explore My Live Projects</h2>
+    <p class="live-projects-intro">
+      A collection of real-world applications and websites
+      I've worked on. Click any project to explore it live.
+    </p>
+
+    <!-- FULL STACK PROJECTS -->
+    <div class="live-category-heading">
+      <h3>Full Stack Projects <span>(05)</span></h3>
+      <p>Dynamic applications and e-commerce platforms</p>
+    </div>
+
+    <div class="live-projects-grid">
+
+      <a href="https://www.amihub.in/"
+         target="_blank" rel="noopener noreferrer"
+         class="live-project-card">
+        <div class="live-project-icon">01</div>
+        <span class="live-project-type">FULL STACK · E-COMMERCE</span>
+        <h3>AMI HUB E-Commerce Application</h3>
+        <p>
+          Online marketplace application for buying,
+          selling and managing product listings.
+        </p>
+        <div class="live-project-bottom">
+          <span>View Live Project</span><span>↗</span>
+        </div>
+      </a>
+
+      <a href="https://amihubcrm.vercel.app/"
+         target="_blank" rel="noopener noreferrer"
+         class="live-project-card">
+        <div class="live-project-icon">02</div>
+        <span class="live-project-type">FULL STACK · CRM</span>
+        <h3>AMI HUB CRM</h3>
+        <p>
+          Customer relationship management system with
+          business, employee and project management modules.
+        </p>
+        <div class="live-project-bottom">
+          <span>View Live Project</span><span>↗</span>
+        </div>
+      </a>
+
+      <a href="https://star-guru-fhww.vercel.app/"
+         target="_blank" rel="noopener noreferrer"
+         class="live-project-card">
+        <div class="live-project-icon">03</div>
+        <span class="live-project-type">FULL STACK · DYNAMIC WEBSITE</span>
+        <h3>Star Guru Dynamic Project</h3>
+        <p>
+          Dynamic foundation website with content
+          management and interactive features.
+        </p>
+        <div class="live-project-bottom">
+          <span>View Live Project</span><span>↗</span>
+        </div>
+      </a>
+
+      <a href="https://www.maduraimeenakshisanthanakadai.com/"
+         target="_blank" rel="noopener noreferrer"
+         class="live-project-card">
+        <div class="live-project-icon">04</div>
+        <span class="live-project-type">FULL STACK · E-COMMERCE</span>
+        <h3>Meenakshi Santhana Kadai</h3>
+        <p>
+          E-commerce store with product catalog,
+          checkout and order management features.
+        </p>
+        <div class="live-project-bottom">
+          <span>View Live Project</span><span>↗</span>
+        </div>
+      </a>
+
+      <a href="https://om-computers-two.vercel.app/"
+         target="_blank" rel="noopener noreferrer"
+         class="live-project-card">
+        <div class="live-project-icon">05</div>
+        <span class="live-project-type">FULL STACK · E-COMMERCE</span>
+        <h3>OM Computers</h3>
+        <p>
+          Computer products and services e-commerce
+          application with an interactive shopping experience.
+        </p>
+        <div class="live-project-bottom">
+          <span>View Live Project</span><span>↗</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- WEBSITE PROJECTS -->
+    <div class="live-category-heading website-heading">
+      <h3>Website Projects <span>(04)</span></h3>
+      <p>Responsive business websites and digital experiences</p>
+    </div>
+
+    <div class="live-projects-grid">
+
+      <a href="https://ranidrivingschool.com/"
+         target="_blank" rel="noopener noreferrer"
+         class="live-project-card">
+        <div class="live-project-icon">06</div>
+        <span class="live-project-type">BUSINESS WEBSITE</span>
+        <h3>Rani Driving School</h3>
+        <p>
+          Responsive driving school website showcasing
+          training services and contact information.
+        </p>
+        <div class="live-project-bottom">
+          <span>View Live Project</span><span>↗</span>
+        </div>
+      </a>
+
+      <a href="https://sangamcaraccessories.in/"
+         target="_blank" rel="noopener noreferrer"
+         class="live-project-card">
+        <div class="live-project-icon">07</div>
+        <span class="live-project-type">AUTOMOTIVE WEBSITE</span>
+        <h3>Sangam Car Accessories</h3>
+        <p>
+          Automotive accessories website showcasing
+          products, car upgrades and services.
+        </p>
+        <div class="live-project-bottom">
+          <span>View Live Project</span><span>↗</span>
+        </div>
+      </a>
+
+      <a href="https://bharathifurniture.com/"
+         target="_blank" rel="noopener noreferrer"
+         class="live-project-card">
+        <div class="live-project-icon">08</div>
+        <span class="live-project-type">FURNITURE WEBSITE</span>
+        <h3>Bharathi Furniture</h3>
+        <p>
+          Modern furniture business website showcasing
+          furniture collections and products.
+        </p>
+        <div class="live-project-bottom">
+          <span>View Live Project</span><span>↗</span>
+        </div>
+      </a>
+
+      <article class="live-project-card live-project-pending">
+        <div class="live-project-icon">09</div>
+        <span class="live-project-type">ACADEMY WEBSITE</span>
+        <h3>MMA Academy</h3>
+        <p>
+          Martial arts academy website featuring
+          training programs and academy activities.
+        </p>
+        <div class="live-project-bottom">
+          <span>Live Link Coming Soon</span><span>⌁</span>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
   <!-- EXPERIENCE -->
   <section class="section section-dark" id="experience">
     <div class="container">
-      <div class="section-label">04 — Experience</div>
+      <div class="section-label">05 — Experience</div>
       <h2 class="section-heading">Career Journey</h2>
       <div class="timeline">
 
@@ -269,7 +528,7 @@
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="container">
-      <div class="section-label">05 — Contact</div>
+      <div class="section-label">06 — Contact</div>
       <h2 class="section-heading">Let's Work Together</h2>
       <p class="contact-sub">Open to full-time roles, freelance projects, and collaborations. Based in Madurai — available remotely too.</p>
       <div class="contact-grid">
